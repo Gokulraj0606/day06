@@ -1,26 +1,17 @@
-class Circle{
-
-   constructor(radius,color){
-     this.radius=radius;
-     this.color=color;
-     }
-     getarea(){
-       return 3.1412*this.radius*this.radius
-     }
-     getcircumference(){
-       return 2*3.1412*this.radius;
-       }
-     
-     set changecolor(modifiedcolor){
-       this.color=modifiedcolor;
-       }
-   
+class Person{
+   constructor(name,age,address,state,country,phonenumber){
+   this.name=name;
+   this.age=age;
+   this.address=address;
+   this.state=state;
+   this.country=country;
+   this.phonenumber=phonenumber;
    }
+   getfullname(){
+     return this.name+"doe";
+     }
+   }
+ var a=new Person("john","23","22,anna nagar,chennai","tamil nadu","india","9876543210")
  
- 
- 
- var b=new Circle(1,"red");
- b.changecolor="void";
- console.log(b.color);
- console.log(b.getarea());
- console.log(b.getcircumference());
+ console.log(a)
+ console.log(a.getfullname());
