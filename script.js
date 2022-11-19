@@ -7,6 +7,7 @@ class Uberprice{
        return this.pricefor1KM*this.travellingdistance;
        }
    }
+
  
  var a=new Uberprice(10,8)
  console.log(a.getprice());
